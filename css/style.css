@@ -1,0 +1,134 @@
+body {
+  background-image: url("../img/topography.svg"),
+    linear-gradient(to right, rgb(217, 58, 110), rgb(115, 71, 212));
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+section.hero {
+  max-height: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "image image price"
+    "image image price2";
+  gap: 20px;
+  position: relative;
+}
+
+img.heroimage {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.price_1 {
+  grid-area: price;
+  background-color: rgb(255, 198, 0);
+  font-size: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+div.price_2 {
+  grid-area: price2;
+  background-color: rgb(255, 198, 0);
+  font-size: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+div.price_1 p:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: bold;
+}
+div.price_2 p:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section.hero h1 {
+  position: absolute;
+  margin-top: 225px;
+  margin-left: 50px;
+  background-color: rgb(255, 198, 0);
+}
+
+section.hero h3 {
+  position: absolute;
+  margin-top: 275px;
+  margin-left: 50px;
+  background-color: rgb(255, 198, 0);
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  background-color: rgb(255, 198, 0);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+section.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  gap: 10px;
+}
+
+section.categories article {
+  background-color: white;
+  text-align: center;
+}
+section.categories article p:nth-of-type(1) {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+section.categories article h3 {
+  margin-top: 0;
+}
+section.categories article p:nth-of-type(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+section.destacado {
+  background-color: white;
+  margin-top: 30px;
+}
+
+section.destacado article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px;
+}
+
+section.destacado article img {
+  width: 100%;
+  height: 100%;
+}
+
+div.texto_destacado {
+  align-content: center;
+}
+div.texto_destacado p {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+div.texto_destacado a {
+  background-color: rgb(154, 201, 245);
+  padding: 10px;
+  text-decoration-line: none;
+  color: black;
+}
